@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "660383377046",
+    "project_id": "login-udacity-bccbc",
+    "storage_bucket": "login-udacity-bccbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660383377046:android:ebb5cec083ce016876c4b7",
+        "android_client_info": {
+          "package_name": "com.example.android.firebaseui_login_sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZxrvMECf-OEJZX8vo2aFtaN-rUcByXus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
