@@ -32,8 +32,6 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_main, container, false)
-
-        // TODO Remove the two lines below once observeAuthenticationState is implemented.
         binding.welcomeText.text = viewModel.getFactToDisplay(requireContext())
         binding.authButton.text = getString(R.string.login_btn)
 
@@ -47,6 +45,10 @@ class MainFragment : Fragment() {
         binding.authButton.setOnClickListener {
             launchSignInFlow()
         }
+        binding.settingsBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_settingsFragment)
+        }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
